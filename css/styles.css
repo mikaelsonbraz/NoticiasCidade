@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff url("../src/fundo.png") repeat-x;
+}
+
+/*Estilização do topo*/
+#container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+#top {
+    border: 2px solid black;
+    height: 150px;
+    background: url("../src/detalhe-topo.png") no-repeat right top;
+    padding-top: 35px;
+}
+
+.logo {
+    width: 152px;
+    height: 66px;
+    display: block;
+}
+
+/*Barra de navegação do topo*/
+#navegacao-top {
+    list-style: none;
+    margin-top: 30px;
+    background-color: #b10333;
+    float: left;
+}
+
+#navegacao-top li {
+    float: left;
+}
+
+#navegacao-top a {
+    display: block;
+    padding: 0.5em 1.5em;
+    line-height: 2em;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    background: url("../src/divisor.png") no-repeat left;
+}
+
+/*Removendo o divisor do primeiro item da navegação do topo*/
+#navegacao-top #primeiro {
+    background: none;
+}
+
+/*Estado hover dos links da barra de navegação superior*/
+#navegacao-top a:hover {
+    color: #69001d;
+    background-color: #de003e;
+}
+
+/*Marcar a aba referente a página que está sendo visitada*/
+body#home #navegacao-top a.home,
+body#brasil #navegacao-top a.brasil,
+body#internacional #navegacao-top a.internacional,
+body#economia #navegacao-top a.economia,
+body#saude #navegacao-top a.saude,
+body#ciencia #navegacao-top a.ciencia,
+body#fotos #navegacao-top a.fotos {
+    color: #fff;
+    background-color: #de003e;
+    cursor: text;
+}
