@@ -7,10 +7,12 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>Notícias Cidade</title>
 </head>
-<body id="home">
-    
-    <div id="container">
+<body id="home" class="tres-colunas">
 
+    <!--Início do container do site-->
+    <div id="container">
+        
+        <!--Início do container do topo-->
         <div id="top">
             <img src="src/logo.png" alt="Notícias Cidade" class="logo">
             <ul id="navegacao-top">
@@ -19,12 +21,122 @@
                 <li><a href="" class="internacional">Internacional</a></li>
                 <li><a href="" class="economia">Economia</a></li>
                 <li><a href="" class="saude">Saúde</a></li>
+                <li><a href="" class="esportes">Esportes</a></li>
                 <li><a href="" class="ciencia">Ciência</a></li>
                 <li><a href="" class="fotos">Fotos</a></li>
             </ul>
         </div>
+        <!--Fim do container do topo-->
+
+        <!--Início do container dos conteúdos-->
+        <div id="conteudo">
+
+            <!--Início barra de navegação lateral-->
+            <div id="lateral">
+                <div class="caixa">
+
+                    <h2>Entrevistas</h2>
+                    <div class="caixa-conteudo">
+                        <ul>
+                            <li><a href="">José Almeida</a></li>
+                            <li><a href="">Eduardo Bananinha</a></li>
+                            <li><a href="">Flávio Willy Wonka</a></li>
+                            <li><a href="">Carlos Tonho da Lua</a></li>
+                            <li><a href="">Jair Putinha do Centrão</a></li>
+                            <li><a href="">Micheque</a></li>
+                        </ul>
+                    </div>
+                
+                </div>
+
+                <div class="caixa">
+
+                    <h2>News</h2>
+                    <div class="caixa-conteudo">
+                        <form action="">
+                        <label for="email">
+                            Email: <br>
+                            <input type="text" name="email" id="email" placeholder="Digite seu email">
+                        </label>
+
+                        <div>
+                            <input type="submit" name="cadastrar" value="Cadastrar" id="input-button">
+                        </div>
+                        </form>
+                    </div>
+                
+                </div>
+
+            </div>
+            <!--Fim barra de navegação lateral-->
+
+            <div id="primario">
+                <div class="caixa">
+
+                    <h2>Destaque</h2>
+                    <div class="caixa-conteudo">
+                        <h3>Nova Legislação</h3>
+                        <img src="src/taxi.jpg" alt="">
+                        <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <a href="">Leia mais</a>
+                    </div>
+                </div>
+
+                <div class="caixa">
+
+                    <h2>Mundo</h2>
+                    <div class="caixa-conteudo">
+
+                        <div class="caixinha-noticia">
+                            <h4>Crise Européia</h4>
+                            <img src="src/mundo.jpg" alt="">
+                            <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+
+                        <div class="caixinha-noticia">
+                            <h4>USA tentam novo acordo</h4>
+                            <img src="src/mundo.jpg" alt="">
+                            <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+
+                        <div class="caixinha-noticia">
+                            <h4>Guerra na Síria</h4>
+                            <img src="src/mundo.jpg" alt="">
+                            <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                
+                
+            </div>
+
+            <div id="secundario">
+                <div class="caixa">
+
+                    <h2>Últimas entrevistas</h2>
+                    <div class="caixa-conteudo">
+                        <h3>Entrevista com Carlos Tonho da Lua</h3>
+                        <img src="src/filtro.jpg" alt="">
+                        <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit.  Rutinha</p>
+                        <a href="">Leia mais</a>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+        <!--Fim do container dos conteudos-->
+
 
     </div>
+    <!--Fim do container do site-->
+
+    <!--Início do container do rodapé-->
+    <div id="container-rodape" style="clear: both;">
+        <div id="rodape">&copy; Copyright 2002-2021 Notícias Cidade</div>
+    </div>
+    <!--Fim do container do rodapé-->
 
 </body>
 </html>
